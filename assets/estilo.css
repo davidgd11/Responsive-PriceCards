@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Poppins:wght@200&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    width: auto;
+
+}
+
+#tudo{
+    animation: dark-to-light 0.4s ease-in-out;
+    border-radius: 25px;
+    border:  1px solid rgb(0, 0, 0, 0.3) ;
+    box-shadow: 2px 4px 4px rgba(76, 43, 226, 0.4);
+}
+
+body{
+    margin: 40px ;
+    background-color: rgb(255, 255, 255);
+}
+
+#intro div{
+    align-items: center;
+    justify-content: center; 
+    display: flex;
+    flex-direction: column;   
+}
+
+#intro div p{
+    color: rgb(76, 43, 226);
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 70px;
+}
+
+#intro div h1{
+    font-size: 49px;
+    font-weight: bolder;
+}
+
+#intro div h2{
+    color: rgb(84, 84, 84);
+    font-size: 16px;
+
+}
+
+
+
+#cartoes{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+#cartoes .cartao{
+    margin:  100px 10px 100px 15px;
+    border-right: 1px solid rgb(0, 0, 0, 0.2) ;
+    border-bottom:  1px solid rgb(0, 0, 0, 0.2) ;
+    box-shadow: 0px 2px 4px rgb(0, 0, 0, 0.6);
+    border-radius: 15px;
+    width: 340px;
+    min-height: 500px;
+}
+
+#cartoes .cartao .inside-cartao{
+    margin: 10px 0px 0px 10px;
+}
+
+#cartoes div .p1{
+    font-size: 16px;
+    font-weight: 800;
+}
+
+#cartoes div p scan{
+    font-size: 49px;
+    font-weight: 800;
+}
+
+#cartoes div .p2{
+    font-weight: 800;
+}
+
+#cartoes div button{
+    border-radius: 8px;
+    background-color: rgb(76, 43, 226); 
+    color: white;
+    width: 320px;
+    height: 40px;
+    font-weight: 800 ;
+    border: 0;
+    transition: all ease-in-out 0.5s;
+}
+#cartoes div button:hover{
+    background-color: rgb(130, 106, 239); 
+    cursor: pointer;
+    transform: scale(0.9);
+}
+
+
+#cartoes div h1{
+    font-size: 15px ;
+    font-weight: bold;
+}
+
+#cartoes div .p3{
+    color: rgb(27, 27, 27);
+    margin: 5px;
+    font-size: 14px;
+}
+
+
+
+
+
+#mode_icon{
+ font-size: 20px;
+ cursor: pointer;
+}
+
+.dark#tudo {
+    color: #ffffff ;
+    background-color: #312d37 ;
+    animation: light-to-dark 0.4s ease-in-out;
+}
+
+.dark#tudo #cartoes div .p3, 
+.dark#tudo #intro h2{
+    color: #9e9e9e ;
+}
+
+@keyframes dark-to-light{
+    0%{
+        background-color: #312d37 ;
+    }
+
+    100%{
+        background-color: #f8fafc;
+    }
+}
+
+@keyframes light-to-dark{
+    0%{
+        background-color: #f8fafc;
+    }
+
+    100%{
+        background-color: #312d37 ;
+    }
+}
+
+@media screen and (max-width: 1300px){
+    body{
+       margin: 10px;
+    }
+
+    section#intro div{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+
+    section#cartoes{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    section#cartoes div.cartao:first-child{
+        margin-top: 60px;
+    }
+
+    section#cartoes div.cartao{
+        margin: 15px;
+    }
+}
